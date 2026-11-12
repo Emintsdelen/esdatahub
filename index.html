@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<title>E's Data Hub</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<div class="popup-overlay" id="about-popup">
+		<div class="popup-content popup-content-about">
+			<span class="close-btn" id="close-about-popup">&times;</span>
+			<h2 class="font" style="color: #4CAF50;">About</h2>
+			<br>
+			<p class="font" style="color: white;">
+			
+			Hi, I'm Muhammed Emin Taşdelen, specializing in artificial intelligence, machine learning, and web scraping.
+			<br><br>
+			I created this platform to provide fast and reliable access to the structured data you need, while continuously refining my technical skills and building real-world solutions.
+			<br><br>
+			You can submit a request form for existing datasets on the site or custom data extraction. If the specific website you are looking for is not listed yet, feel free to share it with me so I can integrate it into the site and deliver the data to you. You are free to leverage these datasets for market analysis, software development, or business opportunities.
+			<br><br>
+			Best of luck with your projects!
+			
+			</p>
+			<br>
+			<div class="linkedin_box">
+				<img class="linkedin_img" src="img/linkedin.png">
+				<span class="font">LinkedIn</span>
+			</div>
+			<br>
+			<div class="github_box">
+				<img class="github_img" src="img/github.png">
+				<span class="font">GitHub</span>
+			</div>
+		</div>
+	</div>
+	<div class="popup-overlay" id="contact-popup">
+		<div class="popup-content popup-content-contact">
+			<span class="close-btn" id="close-contact-popup">&times;</span>
+			<h2 class="font" style="color: #2196F3;">Contact</h2>
+			<br>
+			<form class="custom-contact-form" id="custom-contact-form">
+				<input type="text" class="custom-input font" placeholder="Full Name" required>
+				<input type="email" class="custom-input font" placeholder="E-mail" required>
+				<input type="text" class="custom-input font" placeholder="Subject" required>
+				<textarea class="custom-input font" placeholder="Message" rows="5" required></textarea>
+				<button type="submit" class="custom-btn font">Send</button>
+				<div id="successMessage" class="success-text font">Your message has been sent successfully.</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup-overlay" id="donate-popup">
+		<div class="popup-content popup-content-donate">
+			<span class="close-btn" id="close-donate-popup">&times;</span>
+			<h2 class="font" style="color: #E91E63;">Donate</h2>
+			<br>
+			<p class="font" style="color: white;">
+			
+			If you enjoyed exploring this project and want to help me take it to the next level, please consider showing your support.
+			Your contributions directly fuel its ongoing development and allow me to dedicate more time to bringing new ideas and features to life!
+			
+			</p>
+			<br>
+			<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="emintsdelen" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+		</div>
+	</div>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo font">E's Data Hub</div>
+				<nav class="menu">
+					<a class="font nav-about" id="about-btn">About</a>
+					<a class="font nav-contact" id="contact-btn">Contact</a>
+					<a class="font nav-donate" id="donate-btn">Donate</a>
+				</nav>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="content-wrapper">
+				<h2 class="font">Get Your Data!</h2>
+					
+				<select class="custom-dropdown font">
+					<option value="" disabled selected>Select...</option>
+					<option value="option1" class="dropdown-options">A</option>
+					<option value="option2" class="dropdown-options">B</option>
+					<option value="custom" style="color: #ffe23b;">Custom</option>
+				</select>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<span class="version font">v1.0.0</span>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
